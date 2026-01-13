@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Insights | Financial Services</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <img src="official_logo.png" alt="TrailBlazer Empire Logo" class="brand-logo" />
+        <div class="brand-text">
+          <div class="brand-name">TrailBlazer Empire</div>
+          <div class="brand-tag">Market Insight & Strategic Advisory</div>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link active" href="insights.html">Insights</a>
+        <a class="nav-link" href="index.html#services">Services</a>
+        <a class="nav-link" href="index.html#contact">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <h1>Financial Services</h1>
+        <p>Retail investor behaviour, capital narratives, incentives, and cycle-aware thinking.</p>
+        <div class="page-actions">
+          <a class="button button-ghost" href="insights.html">← Back to Insights Hub</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="insight-list">
+
+          <article class="insight-item">
+            <div class="insight-meta">
+              <span class="pill pill-medium">Medium</span>
+              <span class="pill pill-category">Finance</span>
+            </div>
+            <h3 class="insight-title">Retail Investors Don’t Lose Money Because They’re Dumb — But Because of This</h3>
+            <p class="insight-summary">
+              A framework view of how retail loses: flawed process, emotional cycles, and incentive mismatches.
+            </p>
+            <a class="text-link" target="_blank" rel="noopener noreferrer"
+               href="https://medium.com/@TrailBlazer_Empire/retail-investors-dont-lose-money-because-they-re-dumb-but-they-lose-it-because-of-this-9ba1c5a2a39f">
+              Read on Medium →
+            </a>
+          </article>
+
+          <article class="insight-item">
+            <div class="insight-meta">
+              <span class="pill pill-medium">Medium</span>
+              <span class="pill pill-category">Finance</span>
+            </div>
+            <h3 class="insight-title">How Companies Reward Retail Investors</h3>
+            <p class="insight-summary">
+              What “reward” means in practice: mechanisms that shape attention, participation, and holding behaviour.
+            </p>
+            <a class="text-link" target="_blank" rel="noopener noreferrer"
+               href="https://medium.com/@TrailBlazer_Empire/how-companies-reward-retail-investors-e39052939da8">
+              Read on Medium →
+            </a>
+          </article>
+
+          <article class="insight-item">
+            <div class="insight-meta">
+              <span class="pill pill-medium">Medium</span>
+              <span class="pill pill-category">Finance</span>
+            </div>
+            <h3 class="insight-title">Microchip Technology (MCHP): Financial Reality and Forward Outlook — Q2 FY2026</h3>
+            <p class="insight-summary">
+              Interpreting a semiconductor cycle through the lens of results, bookings, inventory signal, and forward guidance.
+            </p>
+            <a class="text-link" target="_blank" rel="noopener noreferrer"
+               href="https://medium.com/@TrailBlazer_Empire/microchip-technology-mchp-financial-reality-and-forward-outlook-q2-fy2026-d56b2572f252">
+              Read on Medium →
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <img src="official_logo.png" alt="TrailBlazer Empire Logo" class="footer-logo" />
+        <div>
+          <div class="footer-title">TrailBlazer Empire</div>
+          <div class="footer-sub">Market Insight & Strategic Advisory</div>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div>&copy; 2025 TrailBlazer Empire. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector(".nav-toggle");
+    const nav = document.querySelector(".nav");
+    if (toggle && nav) {
+      toggle.addEventListener("click", () => {
+        const open = nav.classList.toggle("is-open");
+        toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+    }
+  </script>
+</body>
+</html>
