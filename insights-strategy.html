@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Insights | Strategic Consultancy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <img src="official_logo.png" alt="TrailBlazer Empire Logo" class="brand-logo" />
+        <div class="brand-text">
+          <div class="brand-name">TrailBlazer Empire</div>
+          <div class="brand-tag">Market Insight & Strategic Advisory</div>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link active" href="insights.html">Insights</a>
+        <a class="nav-link" href="index.html#services">Services</a>
+        <a class="nav-link" href="index.html#contact">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <h1>Strategic Consultancy</h1>
+        <p>Leadership lessons, career strategy, organisational dynamics, and decision framing.</p>
+        <div class="page-actions">
+          <a class="button button-ghost" href="insights.html">← Back to Insights Hub</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="insight-list">
+
+          <article class="insight-item">
+            <div class="insight-meta">
+              <span class="pill pill-linkedin">LinkedIn</span>
+              <span class="pill pill-category">Strategic</span>
+            </div>
+            <h3 class="insight-title">Navigating the Corporate Landscape: My Journey as a Physical Design Engineer at Intel</h3>
+            <p class="insight-summary">
+              How to build trust, learn operating models quickly, and stay execution-focused in high-structure environments.
+            </p>
+            <a class="text-link" target="_blank" rel="noopener noreferrer"
+               href="https://www.linkedin.com/pulse/navigating-corporate-landscape-my-journey-physical-design-sabapathy-1wrlc/?trackingId=p9fgJ%2Bu3TnKSPeQ6yP%2B0pg%3D%3D">
+              Read on LinkedIn →
+            </a>
+          </article>
+
+          <article class="insight-item">
+            <div class="insight-meta">
+              <span class="pill pill-linkedin">LinkedIn</span>
+              <span class="pill pill-category">Strategic</span>
+            </div>
+            <h3 class="insight-title">The Semiconductor Journey: Dynamics of my past experience</h3>
+            <p class="insight-summary">
+              Why career progression is compounding: raise problem difficulty, expand scope, and strengthen your learning loop.
+            </p>
+            <a class="text-link" target="_blank" rel="noopener noreferrer"
+               href="https://www.linkedin.com/pulse/semiconductor-journey-dynamics-my-past-experience-sabapathy-aimfc/?trackingId=p9fgJ%2Bu3TnKSPeQ6yP%2B0pg%3D%3D">
+              Read on LinkedIn →
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <img src="official_logo.png" alt="TrailBlazer Empire Logo" class="footer-logo" />
+        <div>
+          <div class="footer-title">TrailBlazer Empire</div>
+          <div class="footer-sub">Market Insight & Strategic Advisory</div>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div>&copy; 2025 TrailBlazer Empire. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector(".nav-toggle");
+    const nav = document.querySelector(".nav");
+    if (toggle && nav) {
+      toggle.addEventListener("click", () => {
+        const open = nav.classList.toggle("is-open");
+        toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+    }
+  </script>
+</body>
+</html>
