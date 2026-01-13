@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Insights | Technology</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <img src="official_logo.png" alt="TrailBlazer Empire Logo" class="brand-logo" />
+        <div class="brand-text">
+          <div class="brand-name">TrailBlazer Empire</div>
+          <div class="brand-tag">Market Insight & Strategic Advisory</div>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link active" href="insights.html">Insights</a>
+        <a class="nav-link" href="index.html#services">Services</a>
+        <a class="nav-link" href="index.html#contact">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <h1>Technology</h1>
+        <p>Market-facing technology insight: infrastructure shifts, platforms, and adoption drivers.</p>
+        <div class="page-actions">
+          <a class="button button-ghost" href="insights.html">← Back to Insights Hub</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="insight-list">
+
+          <article class="insight-item">
+            <div class="insight-meta">
+              <span class="pill pill-medium">Medium</span>
+              <span class="pill pill-category">Technology</span>
+            </div>
+            <h3 class="insight-title">What is Inside the AI Gold Rush</h3>
+            <p class="insight-summary">
+              An executive view of where value concentrates in AI, what’s durable, and how to interpret the cycle with discipline.
+            </p>
+            <a class="text-link" target="_blank" rel="noopener noreferrer"
+               href="https://medium.com/@TrailBlazer_Empire/what-is-inside-the-ai-gold-rush-9eac2bc6bc09">
+              Read on Medium →
+            </a>
+          </article>
+
+          <article class="insight-item">
+            <div class="insight-meta">
+              <span class="pill pill-medium">Medium</span>
+              <span class="pill pill-category">Technology</span>
+            </div>
+            <h3 class="insight-title">The Architecture That Will Shape the Future of Enterprise</h3>
+            <p class="insight-summary">
+              A clear framework for how GPUs and hyperscalers are driving an “AI factory” enterprise infrastructure re-architecture.
+            </p>
+            <a class="text-link" target="_blank" rel="noopener noreferrer"
+               href="https://medium.com/@TrailBlazer_Empire/the-architecture-that-will-shape-the-future-of-enterprise-ad40dc1736ec">
+              Read on Medium →
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <img src="official_logo.png" alt="TrailBlazer Empire Logo" class="footer-logo" />
+        <div>
+          <div class="footer-title">TrailBlazer Empire</div>
+          <div class="footer-sub">Market Insight & Strategic Advisory</div>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div>&copy; 2025 TrailBlazer Empire. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector(".nav-toggle");
+    const nav = document.querySelector(".nav");
+    if (toggle && nav) {
+      toggle.addEventListener("click", () => {
+        const open = nav.classList.toggle("is-open");
+        toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+    }
+  </script>
+</body>
+</html>
